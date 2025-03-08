@@ -102,8 +102,26 @@ Every I/O device, including disks, keyboards, displays, and even networks,
 is modeled as a file. All input and output in the system is performed
 by reading and writing files, using a small set of system calls known as Unix I/O.
 
-## Important themes
+### Concurrency and Parallelism
 
-A system is more than just hardware.
-It is a collection of intertwined hardware and systems software that
-must cooperate in order to achieve the ultimate goal of running application programs.
+ We use the term concurrency to refer to the general concept of a system
+ with multiple, simultaneous activities, and the term parallelism
+ to refer to the use of concurrency to make a system run faster.
+
+Types of concurrency:
+
+- Thread-level concurrency: with threads, we can have multiple control
+flows executing within a single process. This form of concurrency allows
+multiple users to interact with a system at the same time,
+such as when many people want to get pages from a single Web server.
+- Instruction-level parallelism: modern processors can execute multiple
+instructions at one time, a property known as instruction-level parallelism.
+Processors that can sustain execution rates faster than 1 instruction per cycle
+are known as superscalar processors. Most modern processors support
+superscalar operation (at rates of 2-4 instructions per cycle).
+- SIMD (single instruction - multiple data) parallelism - many modern processors
+have special hardware that allows a single instruction to cause multiple
+operations to be performed in parallel. For example, recent generations
+of Intel and AMD processors have instructions that can add 8 pairs of
+single-precision floating-point numbers (C data type `float`) in parallel.
+More on SIMD here: [Web Aside on SIMD](https://csapp.cs.cmu.edu/3e/waside/waside-simd.pdf).
