@@ -4,7 +4,6 @@ aliases: []
 tags: []
 ---
 
-Database - is a collection of data that'S somehow interrelated together.
-That meant to model some aspect of the real world.
+# Relational Model & Algebra
 
-Database system - is the software that's going to manage that database.
+[Lecture notes](./01-relationalmodel.pdf)
