@@ -1,12 +1,15 @@
 ---
 id: start
 aliases: []
-tags: []
+tags:
+  - sql
 ---
 
 # General info
 
-Home page of the course: <https://15445.courses.cs.cmu.edu/fall2023/>.
+Home page of the course: <https://15445.courses.cs.cmu.edu/fall2023/>
+
+Gradescope: <https://www.gradescope.com/courses/817458>
 
 Assignments: <https://15445.courses.cs.cmu.edu/fall2023/assignments.html>
 

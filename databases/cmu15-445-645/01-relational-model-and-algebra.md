@@ -1,9 +1,10 @@
 ---
 id: 01-relational-model-and-algebra
 aliases: []
-tags: []
+tags:
+  - sql
 ---
 
 # Relational Model & Algebra
 
-[Lecture notes](./01-relationalmodel.pdf)
+[Lecture notes](./01-relational-model-and-algebra.pdf)
